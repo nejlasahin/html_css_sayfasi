@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: -10px;
+    margin-top: -10px;
+    background-color: #F2FFEB;
+}
+
+li a {
+    display: block;
+    color: #798075;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #3C403B;
+    color: #F2FFEB;
+}
+
+.header {
+    background-color: #798075;
+    padding: 20px;
+    text-align: center;
+    color: #F2FFEB;
+    font-size: 25px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #3C403B;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #F2FFEB;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: -500px;
+    padding: 14px 0px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #798075;
+    color: black;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 20%;
+}
+
+.column.middle {
+    width: 60%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column.side,
+    .column.middle {
+        width: 100%;
+    }
+}
+
+.footer {
+    padding: 20px;
+    margin-top: 100px;
+    text-align: center;
+    color: #F2FFEB;
+    background: #3C403B;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('assets/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+h2 {
+    color: #3C403B;
+    text-align: center;
+    font-size: 40px;
+}
